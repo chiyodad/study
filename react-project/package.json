@@ -20,5 +20,9 @@
   },
   "dependencies": {
     "react": "^0.13.3"
+  },
+
+  "scripts": {
+    "start": "webpack-dev-server --hot --inline"
   }
 }
