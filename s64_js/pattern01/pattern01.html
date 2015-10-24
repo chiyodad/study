@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi"/>
+  <meta property="og:description" content="Strategy Pattern Sample"/>
+  <title></title>
+  <link rel="stylesheet" href="http://benvanik.github.io/WebGL-Inspector/core/lib/gli.all.css">
+  <style>
+    body, html {
+      height: 100%;
+      padding: 0px;
+      margin: 0px;
+      background: #ffffff;
+    }
+  </style>
+  <script src="act.js"></script>
+  <script src="square.js" id="calc"></script>
+  <script type="text/javascript">
+    var run = (function(){
+      document.getElementById("result").innerText = "Result : " + (test.run(document.getElementById("num").value));
+    });
+
+    </script>
+ <body>
+     <br/>
+    <input type="text" id="num"/>
+    <input type="button" id="run" value="Run" onclick="run(this)" />
+    <br/>
+    <div id="result"></div>
+</body>
+</html>
